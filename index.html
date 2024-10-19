@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="todo.svg" type="image/x-icon">
+  <title>Házi a 8. alkalomra</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="module" src="/src/index.ts" defer></script>
+</head>
+
+<body>
+  <main>  
+
+    <section class="newTask">     
+      <form class="newTask_form" id="taskAddForm"> 
+
+        <input class="newTask_input" id="newItem" type="text" maxlength="40" autocomplete="off"
+          placeholder="Amit még meg kell tenni..." />
+          
+        <button id="addItem" class="button newTask_gomb" title="Add a listához az új feladatot" aria-label="Add a listához az új feladatot">
+          <span style='font-size:32px;'><b>+</b></span>
+        </button>
+      </form>
+    </section>
+
+    <section class="listContainer">
+      <header class="listTitle">
+        <h3 id="listName">Tennivalók</h3>
+        <button id="clearItemsButton" class="button listTitle_gomb" title="TÖRLI AZ EGÉSZ LISTÁT !"
+          aria-label="Az összes feladat törlése a listáról list">
+          &#10008;
+        </button>
+      </header>
+      <hr />
+      <ul id="listItems">
+       
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
