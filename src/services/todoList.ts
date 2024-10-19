@@ -23,7 +23,7 @@ export default class TodoList<T> {
 
     Toastify({
       text: `Hozzáadva a feladatokkhoz: ${item.content}`,
-      duration: 5000,     
+      duration: 8000,     
       close: true,
       gravity: "top",
       position: "right", 
